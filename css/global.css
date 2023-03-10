@@ -1,0 +1,127 @@
+/* <link rel="shortcut icon" href="https://www.samsung.com/sec/static/_images/favicon.ico"> */
+
+html,body,div,h1,h2,h3,h4,h5,h6,span,object,iframe,p,blockquote,pre,abbr,
+address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,a,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,input,textarea,select,table,
+caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,
+header,hgroup,menu,nav,section,summary,button,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  letter-spacing: -0.02em;
+  font-family: "SamsungOneKorean", Dotum, "돋움", sans-serif;
+  vertical-align: baseline;
+  background: transparent;
+  word-break: keep-all;
+  box-sizing: border-box;
+}
+li,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ins {
+  color: #000;
+  text-decoration: none;
+  background-color: #ff9;
+}
+.flex {
+  display: flex;
+}
+body {
+  background-color: #ffffff;
+  color: #222;
+  font-size:10px;
+}
+.disabled {color:#a6a6a6; }
+.disabled-imp {color:#a6a6a6 !important;}
+.lightgray-color { color: #999; }
+.lightgray-color-imp { color: #999 !important;}
+.samsungblue-color {color:#19279a; }
+.samsungblue-color-imp {color:#19279a !important;}
+.red-alert { color: #fa2337;}
+.red-alert-imp { color: #fa2337 !important;}
+.skyblue-color{ color:#0077c8;}
+.skyblue-color-imp { color:#0077c8 !important;}
+.seablue-color{color:#00b3e3;}
+.seablue-color-imp {color:#00b3e3 !important;}
+.Teal-color{ color:#00c3b2;}
+.Teal-color-imp { color:#00c3b2 !important;}
+.clover-color{ color:#97d653; }
+.clover-color-imp{ color:#97d653 !important;}
+.saffron-color{ color:#ffb546; }
+.saffron-color-imp{ color:#ffb546 !important;}
+.coral-color{ color:#fa2337; }
+.coral-color-imp { color:#fa2337!important; }
+
+@font-face {
+    font-family:'Samsung Sharp Sans';
+    font-style:normal;
+    font-weight:normal;
+    src:url('https://www.samsung.com/sec/static/_font/SamsungSharpSans-regular.TTF') format("truetype"),
+        url('https://www.samsung.com/sec/static/_font/SamsungSharpSans-regular.TTF') format("embedded-opentype");
+}
+@font-face {
+    font-family:'Samsung Sharp Sans';
+    font-style:normal;
+    font-weight:bold;
+    src:url('https://www.samsung.com/sec/static/_font/SamsungSharpSans-Bold.eot');
+    src:url('https://www.samsung.com/sec/static/_font/SamsungSharpSans-Bold.eot?#iefix') format("embedded-opentype"),
+        url('https://www.samsung.com/sec/static/_font/SamsungSharpSans-Bold.woff2') format("woff2"),
+        url('https://www.samsung.com/sec/static/_font/SamsungSharpSans-Bold.woff') format("woff"),
+        url('https://www.samsung.com/sec/static/_font/SamsungSharpSans-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family:'SamsungOneKorean';
+    font-style:normal;
+    font-weight:normal;
+    src:url('https://www.samsung.com/sec/static/_font/SamsungOneKorean-400.eot');
+    src:url('https://www.samsung.com/sec/static/_font/SamsungOneKorean-400.eot?#iefix') format("embedded-opentype"),
+        url('https://www.samsung.com/sec/static/_font/SamsungOneKorean-400.woff2') format("woff2"),
+        url('https://www.samsung.com/sec/static/_font/SamsungOneKorean-400.woff') format("woff"),
+        url('https://www.samsung.com/sec/static/_font/SamsungOneKorean-400.ttf') format("truetype");
+}
+@font-face {
+    font-family:'SamsungOneKorean';
+    font-style:normal;
+    font-weight:bold;
+    src:url('https://www.samsung.com/sec/static/_font/SamsungOneKorean-700.eot');
+    src:url('https://www.samsung.com/sec/static/_font/SamsungOneKorean-700.eot?#iefix') format("embedded-opentype"),
+        url('https://www.samsung.com/sec/static/_font/SamsungOneKorean-700.woff2') format("woff2"),
+        url('https://www.samsung.com/sec/static/_font/SamsungOneKorean-700.woff') format("woff"),
+        url('https://www.samsung.com/sec/static/_font/SamsungOneKorean-700.ttf') format("truetype");
+}
+
+/* 21-11-01 NEW KOR font */
+@font-face {
+	font-family:'Samsung Korea Sans';
+	font-style:normal;
+	font-weight:normal;
+	src:url('https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Medium.eot');
+	src:url('https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Medium.eot?#iefix') format("embedded-opentype"),
+		url('https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Medium.woff2') format("woff2"),
+		url('https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Medium.woff') format("woff"),
+		url('https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Medium.ttf') format("truetype");
+}
+@font-face {
+	font-family:'Samsung Korea Sans';
+	font-style:normal;
+	font-weight:bold;
+	src:url('https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Bold.eot');
+	src:url('https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Bold.eot?#iefix') format("embedded-opentype"),
+		url('https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Bold.woff2') format("woff2"),
+		url('https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Bold.woff') format("woff"),
+		url('https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family:'samsungIcon';
+  font-style:normal;
+  font-weight:normal;
+  src:url('https://www.samsung.com/sec/static/_font/samsungIcon.woff') format("woff");
+}

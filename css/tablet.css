@@ -1,0 +1,41 @@
+@media (max-width: 1280px, min-width:415px) {
+  * {
+    font-size: 20px;
+  }
+  header {
+    height: 100px;
+  }
+  header h1 {
+    margin-left: 20px;
+    line-height: 10px;
+  }
+  .gnb {
+    right: 20px;
+    gap: 17px;
+  }
+  /* 갤럭시 컨텐츠 영역 */
+  /* 이상민 */
+  .tabcontents{
+    opacity: 0;
+  }
+  #sect6 h2 {
+    margin: 150px auto 0;
+    width: 340px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .contentsBox {
+    border: 1px solid #000;
+    margin-top: 100px;
+    gap: 100px;
+    height: 100%;
+  }
+  .contents {
+    width: 30%;
+    height: 30%;
+    border-radius: 50px;
+  }
+  .contents:nth-child(2) {
+    top: 100px;
+  }
+}

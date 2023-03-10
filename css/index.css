@@ -1,0 +1,264 @@
+@import url(./myGlobal.css);
+
+/* html기본 폰트사이즈가 16px이기때문에
+0.5rem = 8px
+1rem = 16px 
+2rem = 16px * 2 = 32px
+.
+.
+20rem = 320px이 된다
+여기서 body의 기본폰트사이즈를 강제로 
+변경시키면 이 값에 따라 rem값이 조정이된다
+즉, body의 폰트사이즈를 10px로 가정했을때
+1rem = 10px
+2rem = 10px * 2 = 20px
+.
+.
+20rem = 200px*/
+/*================== mobile css ===========================*/
+/* 전체 섹션의 너비 및 높이 조정 */
+
+section {
+  position: relative;
+  height: 100vh;
+}
+header {
+  position: fixed;
+  align-items: center;
+  background-color: var(--header-background-color);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  width: 100%;
+}
+/* 메뉴바 */
+header h1 {
+  font-family: "SamsungOneKorean";
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+  height: 100%;
+  font-size: var(--h1-font-size);
+}
+header span {
+  font-size: var(--span-font-size);
+  color: var(--h1-color);
+}
+/* gnb영역 */
+.gnb {
+  position: absolute;
+}
+/* 돋보기 아이콘 */
+.search a:after {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: var(--gnb-font-weight);
+  font-size: var(--gnb-font-size);
+  color: var(--gnb-color);
+}
+/* 바구니 아이콘 */
+.basket a:after {
+  content: "\f07a";
+  font-family: "Font Awesome 5 Free";
+  font-weight: var(--gnb-font-weight);
+  font-size: var(--gnb-font-size);
+  color: var(--gnb-color);
+}
+/* ------------------------------- */
+/* 메인페이지 */
+#sect1 h2 {
+  /* width값과 height값은 rem이 아닌 px로 고정하겠다. */
+  font-weight: var(--h2-font-weight);
+  font-size: var(--h2-font-size);
+  text-align: center;
+  position: absolute;
+  color: var(--h2-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
+#sect1 video {
+  width: 100%;
+}
+/* 이벤트 페이지 */
+#sect2 h2 {
+  font-size: var(--h2-font-size);
+}
+#sect2 h1 {
+  font-size: var(--h1-font-size);
+}
+.events {
+  width: 90%;
+  margin: auto;
+}
+.events li {
+  border: 1px solid;
+  border-radius: var(--boder-radious);
+}
+.events li a {
+  display: block;
+  height: 100%;
+}
+.eventwrap {
+  flex-wrap: wrap;
+}
+.eventwrap li {
+  width: 47.5%;
+  overflow: hidden;
+  border-radius: var(--boder-radious);
+}
+
+li.big {
+  background: url(../images/event_수상\ 제품.png) no-repeat center / cover;
+}
+.eventwrap li:nth-child(1) a {
+  background: url(../images/event_익스프레스.png) no-repeat center / cover;
+}
+.eventwrap li:nth-child(2) a {
+  background: url(../images/event_갤럭시\ 스튜디오.png) no-repeat center / cover;
+}
+.eventwrap li:nth-child(3) a {
+  background: url(../images/event_제품\ 영상.png) no-repeat center / cover;
+}
+.eventwrap li:nth-child(4) a {
+  background: url(../images/event_캠퍼스\ 스토어2.png) no-repeat center / cover;
+}
+/* 갤럭시 탭 페이지 */
+/* 김유나 */
+#sect3 {
+  background: url(../images/Tab\ main.png) no-repeat;
+  position: relative;
+}
+#sect3 h2 {
+  font-family: "SamsungOneKorean";
+  font-weight: var(--h2-font-weight);
+  font-size: var(--h2-font-size);
+}
+.btn {
+  background: black;
+  color: white;
+  display: flex;
+  border-radius: var(--boder-radious);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+}
+.btn a {
+  font-size: var(--btn-font-size);
+}
+.b1 {
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+.b2 {
+  right: 7.5%;
+  top: 16%;
+  transform: translateX(-10%);
+}
+.b3 {
+  left: 16.5%;
+  top: 16%;
+  transform: translateX(-12%);
+}
+
+/* 김유나 태블릿 반응형 */
+@media (max-width: 1280px) {
+}
+
+/* 갤럭시 와치 페이지 */
+/* 김성열 */
+/* 슬라이드 스와이퍼 */
+
+
+
+/* 김성열 태블릿 반응형 */
+@media (max-width: 1280px) {
+}
+
+
+
+/* 갤럭시 북 페이지 */
+/* 김효빈 */
+
+#sect5 h2 {
+  font-size: var(--h2-font-size);
+}
+/* 각 노트북을 감싸고있는 전체영역 확인하려면 아래 백그라운드 주석해제 */
+.tabcontents ul {
+  /* background-color: #333; */
+  /* 센터를 해줌으로써 각 북이 중앙정렬 */
+  justify-content: center;
+  /* wrap을 해줌으로써 영역안에 줄 맞춤 */
+  flex-wrap: wrap;
+
+}
+.tabcontents ul li {
+  /* 각 북의 박스 디자인 */
+  text-align: center;
+  background: #eee;
+}
+
+.tabbox {
+  margin: 0 auto;
+}
+
+.tabmenu {
+  /* 링크버튼을 보기좋게 정렬 */
+  justify-content: space-evenly;
+  /* wrap을 통해 너비값을 살린 채 영역안으로 줄바꿈 */
+  flex-wrap: wrap;
+}
+
+.tabmenu li a {
+  /* a태그에 너비 및 높이를 주기위해 block */
+  display: block;
+  border: 1px solid #000;
+  /* 속성에 var(~~~)써있는경우는 css폴더 안 myGlobal.css를 확인할것. */
+  border-radius: var(--boder-radious);
+  font-size: var(--link-font-size);
+}
+
+/* 김효빈 태블릿 반응형 */
+@media (max-width: 1280px) {
+}
+
+
+/* 갤럭시 컨텐츠 영역 */
+/* 이상민 */
+#sect6 h2 {
+  font-size: var(--h2-font-size);
+}
+.contentsBox {
+  position: relative;
+  justify-content: space-evenly;
+}
+.contents {
+  overflow: hidden;
+  transition: 0.3s;
+  border: 1px solid #000;
+}
+.contents a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.contents:nth-child(2) {
+  position: absolute;
+  z-index: 10;
+}
+.contents img {
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+}
+/* 컨텐츠 사용자 반응 시 */
+.contents a:hover img {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.contents:hover {
+  border: 1px solid #006bea;
+  transition: 0.3s;
+}

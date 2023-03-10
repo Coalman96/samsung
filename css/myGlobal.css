@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  color: #222;
+  text-align: center;
+}
+li {
+  list-style: none;
+  color: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  vertical-align: top;
+}
+ins {
+  color: #000;
+  text-decoration: none;
+  background-color: #ff9;
+}
+.flex {
+  display: flex;
+}
+body {
+    background-color: #ffffff;
+}
+
+/* 기본셋팅 */
+/* root */
+:root {
+  --h1-font-size: 4rem;
+  --h1-color: #006bea;
+  --h2-font-size: 3rem;
+  --h2-font-weight: 100;
+  --h2-color: #fff;
+  --span-font-size: 2rem;
+  --p-font-size: 2rem;
+  --header-background-color: rgba(255, 255, 255, 0.5);
+  --gnb-font-size:2.5rem;
+  --gnb-font-weight:900;
+  --gnb-color:#333;
+  --boder-radious:15px;
+  --btn-font-size:1.4rem;
+  --link-font-size:2rem;
+}
+/* font */
+@font-face {
+  font-family: "Samsung Sharp Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://www.samsung.com/sec/static/_font/SamsungSharpSans-regular.TTF")
+      format("truetype"),
+    url("https://www.samsung.com/sec/static/_font/SamsungSharpSans-regular.TTF")
+      format("embedded-opentype");
+}
+@font-face {
+  font-family: "Samsung Sharp Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("https://www.samsung.com/sec/static/_font/SamsungSharpSans-Bold.eot");
+  src: url("https://www.samsung.com/sec/static/_font/SamsungSharpSans-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.samsung.com/sec/static/_font/SamsungSharpSans-Bold.woff2")
+      format("woff2"),
+    url("https://www.samsung.com/sec/static/_font/SamsungSharpSans-Bold.woff")
+      format("woff"),
+    url("https://www.samsung.com/sec/static/_font/SamsungSharpSans-Bold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "SamsungOneKorean";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://www.samsung.com/sec/static/_font/SamsungOneKorean-400.eot");
+  src: url("https://www.samsung.com/sec/static/_font/SamsungOneKorean-400.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.samsung.com/sec/static/_font/SamsungOneKorean-400.woff2")
+      format("woff2"),
+    url("https://www.samsung.com/sec/static/_font/SamsungOneKorean-400.woff")
+      format("woff"),
+    url("https://www.samsung.com/sec/static/_font/SamsungOneKorean-400.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "SamsungOneKorean";
+  font-style: normal;
+  font-weight: bold;
+  src: url("https://www.samsung.com/sec/static/_font/SamsungOneKorean-700.eot");
+  src: url("https://www.samsung.com/sec/static/_font/SamsungOneKorean-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.samsung.com/sec/static/_font/SamsungOneKorean-700.woff2")
+      format("woff2"),
+    url("https://www.samsung.com/sec/static/_font/SamsungOneKorean-700.woff")
+      format("woff"),
+    url("https://www.samsung.com/sec/static/_font/SamsungOneKorean-700.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Samsung Korea Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Medium.eot");
+  src: url("https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Medium.woff2")
+      format("woff2"),
+    url("https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Medium.woff")
+      format("woff"),
+    url("https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Medium.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Samsung Korea Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Bold.eot");
+  src: url("https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Bold.woff2")
+      format("woff2"),
+    url("https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Bold.woff")
+      format("woff"),
+    url("https://www.samsung.com/sec/static/_font/_kor_sans/SamsungKoreanSans-Bold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "samsungIcon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://www.samsung.com/sec/static/_font/samsungIcon.woff")
+    format("woff");
+}
+/* 폰트 */

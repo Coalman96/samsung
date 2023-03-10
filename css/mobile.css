@@ -1,0 +1,138 @@
+@media (max-width: 414px) {
+  section {
+    height: 90vh;
+  }
+  /* 메뉴바 */
+  header {
+    height: 60px;
+  }
+  header h1 {
+    margin-left: 10px;
+    line-height: 10px;
+  }
+  /* gnb영역 */
+  .gnb {
+    right: 20px;
+    gap: 17px;
+  }
+  /* 돋보기 아이콘 */
+  .search a:after {
+    line-height: 39px;
+  }
+  /* 바구니 아이콘 */
+  .basket a:after {
+    line-height: 39px;
+  }
+  /* 메뉴 아이콘 */
+  .menuBar {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 3px;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 30px;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 8px) rotate(-45deg);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: translate(0, -10px) rotate(45deg);
+  }
+  /* 메인페이지 */
+  #sect1 h2 {
+    width: 320px;
+  }
+  /* 이벤트 페이지 */
+  #sect2 h1 {
+    margin-bottom: 40px;
+  }
+  .events {
+    margin-top: 10px;
+  }
+  li.big {
+    height: 180px;
+    margin-bottom: 25px;
+  }
+  .eventwrap {
+    gap: 10px;
+  }
+  .eventwrap li {
+    height: 120px;
+  }
+  /* 갤럭시 탭 페이지 */
+  /* 김유나 */
+  #sect3 {
+    background-position-y: 150px;
+  }
+  .btn {
+    width: 100px;
+    height: 28px;
+  }
+  .btn a {
+    padding: 10px;
+  }
+  /* 갤럭시 북 페이지 */
+  /* 김효빈 */
+
+  /* sect5 최상단 타이틀의 글자크기와 아래간격 조정 */
+  #sect5 h2 {
+    margin-bottom: 20px;
+  }
+  .tabcontents ul {
+    /* gap을통해 구분해놓았음. position을 이용한 배치는 도전해볼것! */
+    gap: 20px;
+  }
+  .tabcontents ul li {
+    border-radius: 10px;
+  }
+  .tabcontents ul li img {
+    /* 이미지가 너무커서 임시로 줄여놓았음! 원래대로 되돌리려면 소수점을 빼면됨! */
+    width: 36px;
+    height: 26.5px;
+  }
+  .tabbox {
+    /* 링크 버튼 4개를 감싸는 영역, 마진오토를 통해 중앙정렬 */
+    width: 400px;
+  }
+  .tabmenu li a {
+    width: 170px;
+    height: 68px;
+    /* 텍스트의 세로정렬을위해 line-height(두줄이므로 높이값의 절반을해서 중앙정렬) */
+    line-height: 34px;
+    margin: 10px 0;
+  }
+  /* 갤럭시 컨텐츠 영역 */
+  /* 이상민 */
+  #sect6 h2 {
+    margin: 113px auto 0;
+    width: 340px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .contentsBox {
+    margin-top: 50px;
+    gap: 60px;
+    height: 200px;
+  }
+  .contents {
+    width: 130px;
+    height: 130px;
+    border-radius: 35px;
+  }
+  .contents:nth-child(2) {
+    top: 50px;
+  }
+}
